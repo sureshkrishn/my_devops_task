@@ -1,0 +1,20 @@
+root@server:/home/sk/my_folder# ls
+another_file.txt  my_file.txt
+root@server:/home/sk/my_folder# touch file{1..20}.txt
+root@server:/home/sk/my_folder# ls
+another_file.txt  file12.txt  file16.txt  file2.txt   file5.txt  file9.txt
+file1.txt         file13.txt  file17.txt  file20.txt  file6.txt  my_file.txt
+file10.txt        file14.txt  file18.txt  file3.txt   file7.txt
+file11.txt        file15.txt  file19.txt  file4.txt   file8.txt
+root@server:/home/sk/my_folder# for i in {1..5}; do mv "file${i}.txt" "file${i}.                                                                                        yml"; done
+root@server:/home/sk/my_folder# ls
+another_file.txt  file12.txt  file16.txt  file2.yml   file5.yml  file9.txt
+file1.yml         file13.txt  file17.txt  file20.txt  file6.txt  my_file.txt
+file10.txt        file14.txt  file18.txt  file3.yml   file7.txt
+file11.txt        file15.txt  file19.txt  file4.yml   file8.txt
+root@server:/home/sk/my_folder# ls -lt | head -n 5
+total 8
+-rw-r--r-- 1 root root   0 Sep  1 02:31 file1.yml
+-rw-r--r-- 1 root root   0 Sep  1 02:31 file10.txt
+-rw-r--r-- 1 root root   0 Sep  1 02:31 file11.txt
+-rw-r--r-- 1 root root   0 Sep  1 02:31 file12.txt
