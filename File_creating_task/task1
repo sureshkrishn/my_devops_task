@@ -1,0 +1,14 @@
+root@server:/home/sk/my_folder# cat -n my_file.txt
+     1  Hi
+     2  This is my new file for file creating task
+     3  This is my second file created to file creating task
+     4  the firt file is named as my_file.txt
+     5  the second file is named as another_file.txt
+root@server:/home/sk/my_folder# cat -n another_file.txt
+     1  This is my second file created to file creating task
+     2  the firt file is named as my_file.txt
+     3  the second file is named as another_file.txt
+root@server:/home/sk/my_folder# ls
+another_file.txt  file10.txt  file12.txt  file14.txt  file16.txt  file18.txt  file2.yml   file3.yml  file5.yml  file7.txt  file9.txt
+file1.yml         file11.txt  file13.txt  file15.txt  file17.txt  file19.txt  file20.txt  file4.yml  file6.txt  file8.txt  my_file.txt
+root@server:/home/sk/my_folder#
