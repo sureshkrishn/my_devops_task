@@ -1,0 +1,163 @@
+# To get IP address of any domain
+
+sk@server:~$ host youtube.com
+youtube.com has address 142.251.35.174
+youtube.com has IPv6 address 2607:f8b0:4006:80c::200e
+youtube.com mail is handled by 0 smtp.google.com.
+
+# To check Memory usage
+
+sk@server:~$ free -m
+               total        used        free      shared  buff/cache   available
+Mem:           15993         534       13713           0        2076       15458
+Swap:           1023           0        1023
+
+# To find CPU usage 
+
+sk@server:~$ ps -aux
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  22328 13196 ?        Ss   Sep01   0:30 /sbin/init
+root           2  0.0  0.0      0     0 ?        S    Sep01   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        S    Sep01   0:00 [pool_workque
+root           4  0.0  0.0      0     0 ?        I<   Sep01   0:00 [kworker/R-rc
+root           5  0.0  0.0      0     0 ?        I<   Sep01   0:00 [kworker/R-rc
+root           6  0.0  0.0      0     0 ?        I<   Sep01   0:00 [kworker/R-sl
+root           7  0.0  0.0      0     0 ?        I<   Sep01   0:00 [kworker/R-ne
+root           9  0.0  0.0      0     0 ?        I<   Sep01   0:00 [kworker/0:0H
+root          10  0.0  0.0      0     0 ?        I    Sep01   0:02 [kworker/u8:0
+root          12  0.0  0.0      0     0 ?        I<   Sep01   0:00 [kworker/R-mm
+root          13  0.0  0.0      0     0 ?        I    Sep01   0:00 [rcu_tasks_kt
+root          14  0.0  0.0      0     0 ?        I    Sep01   0:00 [rcu_tasks_ru
+root          15  0.0  0.0      0     0 ?        I    Sep01   0:00 [rcu_tasks_tr
+root          16  0.0  0.0      0     0 ?        S    Sep01   0:00 [ksoftirqd/0]
+root          17  0.0  0.0      0     0 ?        I    Sep01   5:11 [rcu_preempt]
+root          18  0.0  0.0      0     0 ?        S    Sep01   0:09 [migration/0]
+root          19  0.0  0.0      0     0 ?        S    Sep01   0:00 [idle_inject/
+root          20  0.0  0.0      0     0 ?        S    Sep01   0:00 [cpuhp/0]
+root          21  0.0  0.0      0     0 ?        S    Sep01   0:00 [cpuhp/1]
+root          22  0.0  0.0      0     0 ?        S    Sep01   0:00 [idle_inject/
+root          23  0.0  0.0      0     0 ?        S    Sep01   0:09 [migration/1]
+root          24  0.0  0.0      0     0 ?        S    Sep01   0:00 [ksoftirqd/1]
+root          26  0.0  0.0      0     0 ?        I<   Sep01   0:06 [kworker/1:0H
+root          27  0.0  0.0      0     0 ?        S    Sep01   0:00 [cpuhp/2]
+root          28  0.0  0.0      0     0 ?        S    Sep01   0:00 [idle_inject/
+root          29  0.0  0.0      0     0 ?        S    Sep01   0:07 [migration/2]
+root          30  0.0  0.0      0     0 ?        S    Sep01   0:00 [ksoftirqd/2]
+root          32  0.0  0.0      0     0 ?        I<   Sep01   0:05 [kworker/2:0H
+root          33  0.0  0.0      0     0 ?        S    Sep01   0:00 [cpuhp/3]
+root          34  0.0  0.0      0     0 ?        S    Sep01   0:00 [idle_inject/
+root          35  0.0  0.0      0     0 ?        S    Sep01   0:06 [migration/3]
+root          36  0.0  0.0      0     0 ?        S    Sep01   0:00 [ksoftirqd/3]
+root          38  0.0  0.0      0     0 ?        I<   Sep01   0:00 [kworker/3:0H
+root          43  0.0  0.0      0     0 ?        S    Sep01   0:00 [kdevtmpfs]
+root          44  0.0  0.0      0     0 ?        I<   Sep01   0:00 [kworker/R-in
+root          46  0.0  0.0      0     0 ?        S    Sep01   0:00 [kauditd]
+root          47  0.0  0.0      0     0 ?        S    Sep01   0:06 [khungtaskd]
+root          48  0.0  0.0      0     0 ?        S    Sep01   0:00 [oom_reaper]
+root          50  0.0  0.0      0     0 ?        I<   Sep01   0:00 [kworker/R-wr
+root          51  0.0  0.0      0     0 ?        S    Sep01   1:16 [kcompactd0]
+root          52  0.0  0.0      0     0 ?        SN   Sep01   0:00 [ksmd]
+root          54  0.0  0.0      0     0 ?        SN   Sep01   0:00 [khugepaged]
+root          55  0.0  0.0      0     0 ?        I<   Sep01   0:00 [kworker/R-ki
+root          56  0.0  0.0      0     0 ?        I<   Sep01   0:00 [kworker/R-kb
+root          57  0.0  0.0      0     0 ?        I<   Sep01   0:00 [kworker/R-bl
+root          58  0.0  0.0      0     0 ?        S    Sep01   0:00 [irq/9-acpi]
+root          60  0.0  0.0      0     0 ?        I<   Sep01   0:00 [kworker/R-tp
+root          61  0.0  0.0      0     0 ?        I<   Sep01   0:00 [kworker/R-at
+root          62  0.0  0.0      0     0 ?        I<   Sep01   0:00 [kworker/R-md
+root          63  0.0  0.0      0     0 ?        I<   Sep01   0:00 [kworker/R-md
+root          64  0.0  0.0      0     0 ?        I<   Sep01   0:00 [kworker/R-ed
+root          65  0.0  0.0      0     0 ?        I<   Sep01   0:00 [kworker/R-de
+root          66  0.0  0.0      0     0 ?        S    Sep01   0:00 [watchdogd]
+root          70  0.0  0.0      0     0 ?        S    Sep01   0:00 [kswapd0]
+root          71  0.0  0.0      0     0 ?        S    Sep01   0:00 [ecryptfs-kth
+root          72  0.0  0.0      0     0 ?        I<   Sep01   0:00 [kworker/R-kt
+root          73  0.0  0.0      0     0 ?        I<   Sep01   0:00 [kworker/R-ac
+root          75  0.0  0.0      0     0 ?        S    Sep01   0:00 [scsi_eh_0]
+root          76  0.0  0.0      0     0 ?        I<   Sep01   0:00 [kworker/R-sc
+root          77  0.0  0.0      0     0 ?        S    Sep01   0:00 [scsi_eh_1]
+root          78  0.0  0.0      0     0 ?        I<   Sep01   0:00 [kworker/R-sc
+root          79  0.0  0.0      0     0 ?        S    Sep01   0:00 [scsi_eh_2]
+root          80  0.0  0.0      0     0 ?        I<   Sep01   0:00 [kworker/R-sc
+root          85  0.0  0.0      0     0 ?        I<   Sep01   0:00 [kworker/R-ml
+root          86  0.0  0.0      0     0 ?        I<   Sep01   0:00 [kworker/R-ip
+root          89  0.0  0.0      0     0 ?        I<   Sep01   0:03 [kworker/0:1H
+root          95  0.0  0.0      0     0 ?        I<   Sep01   0:00 [kworker/R-ks
+root          97  0.0  0.0      0     0 ?        I<   Sep01   0:00 [kworker/u13:
+root          98  0.0  0.0      0     0 ?        I<   Sep01   0:00 [kworker/u14:
+root          99  0.0  0.0      0     0 ?        I<   Sep01   0:00 [kworker/u15:
+root         100  0.0  0.0      0     0 ?        I<   Sep01   0:00 [kworker/u16:
+root         101  0.0  0.0      0     0 ?        I<   Sep01   0:00 [kworker/u17:
+root         107  0.0  0.0      0     0 ?        I<   Sep01   0:00 [kworker/R-cr
+root         118  0.0  0.0      0     0 ?        I<   Sep01   0:00 [kworker/R-ch
+root         142  0.0  0.0      0     0 ?        I<   Sep01   0:04 [kworker/3:1H
+root         147  0.0  0.0      0     0 ?        I<   Sep01   0:00 [kworker/1:1H
+root         175  0.0  0.0      0     0 ?        I    Sep01   0:00 [kworker/u8:1
+root         177  0.0  0.0      0     0 ?        I<   Sep01   0:00 [kworker/R-tt
+root         227  0.0  0.0      0     0 ?        I<   Sep01   0:00 [kworker/R-ra
+root         249  0.0  0.0      0     0 ?        I<   Sep01   0:00 [kworker/2:2H
+root         274  0.0  0.0      0     0 ?        S    Sep01   0:23 [jbd2/sda4-8]
+root         275  0.0  0.0      0     0 ?        I<   Sep01   0:00 [kworker/R-ex
+root         329  0.0  0.5 132420 84140 ?        S<s  Sep01   1:14 /usr/lib/syst
+root         352  0.0  0.0      0     0 ?        I<   Sep01   0:00 [kworker/R-km
+root         353  0.0  0.0      0     0 ?        I<   Sep01   0:00 [kworker/R-km
+root         381  0.0  0.1 289120 27136 ?        SLsl Sep01   3:01 /sbin/multipa
+root         394  0.0  0.0  28260  6912 ?        Ss   Sep01   0:07 /usr/lib/syst
+root         403  0.0  0.0      0     0 ?        S    Sep01   0:00 [psimon]
+root         517  0.0  0.0      0     0 ?        S    Sep01   0:00 [jbd2/sda2-8]
+root         518  0.0  0.0      0     0 ?        I<   Sep01   0:00 [kworker/R-ex
+systemd+     578  0.0  0.0  21576 12800 ?        Ss   Sep01   0:09 /usr/lib/syst
+systemd+     725  0.0  0.0  18996  9472 ?        Ss   Sep01   0:18 /usr/lib/syst
+message+     730  0.0  0.0   9752  5120 ?        Ss   Sep01   0:00 @dbus-daemon
+root         731  0.0  0.0      0     0 ?        I<   Sep01   0:00 [kworker/R-cf
+root         735  0.0  0.1  29416 20224 ?        Ss   Sep01   0:00 /usr/bin/pyth
+root         736  0.0  0.0  18156  8576 ?        Ss   Sep01   0:07 /usr/lib/syst
+root         755  0.0  0.1 107020 22400 ?        Ssl  Sep01   0:00 /usr/bin/pyth
+root         782  0.0  0.0   3116  1920 tty1     Ss+  Sep01   0:00 /sbin/agetty
+_chrony      792  0.0  0.0  19400  3796 ?        S    Sep01   0:13 /usr/sbin/chr
+_chrony      793  0.0  0.0  11072  2292 ?        S    Sep01   0:00 /usr/sbin/chr
+root         796  0.0  0.0   5184  3328 ?        Ss   Sep01   0:11 /usr/sbin/cro
+root         962  0.0  0.0  12020  7936 ?        Ss   Sep01   0:00 sshd: /usr/sb
+polkitd     1516  0.0  0.0 308164  8064 ?        Ssl  Sep01   0:54 /usr/lib/polk
+root        2066  0.0  0.0      0     0 ?        I<   Sep01   0:00 [kworker/R-tl
+root       19948  0.0  0.0      0     0 ?        I    Sep13   0:06 [kworker/1:0-
+root       20827  0.0  0.0      0     0 ?        I    Sep13   0:03 [kworker/2:0-
+root       25219  0.0  0.0      0     0 ?        I    Sep14   0:01 [kworker/0:1-
+root       26703  0.0  0.0      0     0 ?        I    Sep14   0:00 [kworker/u9:1
+root       27218  0.0  0.0      0     0 ?        I    Sep14   0:00 [kworker/u11:
+root       27517  0.0  0.0      0     0 ?        I    00:03   0:00 [kworker/2:2]
+root       27518  0.0  0.0      0     0 ?        I    00:03   0:00 [kworker/0:2-
+root       27542  0.0  0.0      0     0 ?        I    00:11   0:00 [kworker/u11:
+root       27658  0.0  0.0      0     0 ?        I    00:50   0:00 [kworker/u12:
+root       27665  0.0  0.0  14964 10604 ?        Ss   00:52   0:00 sshd: sk [pri
+root       27668  0.0  0.0      0     0 ?        S    00:52   0:00 [psimon]
+sk         27670  0.0  0.0  20276 11392 ?        Ss   00:52   0:00 /usr/lib/syst
+root       27671  0.0  0.0      0     0 ?        I    00:52   0:00 [kworker/3:2-
+root       27672  0.0  0.0      0     0 ?        I    00:52   0:00 [kworker/3:3-
+sk         27673  0.0  0.0  21148  3416 ?        S    00:52   0:00 (sd-pam)
+sk         27702  0.0  0.0  15124  7088 ?        S    00:52   0:00 sshd: sk@pts/
+sk         27703  0.0  0.0   5016  4224 pts/0    Ss   00:52   0:00 -bash
+root       28045  0.0  0.0      0     0 ?        I    01:09   0:00 [kworker/u9:3
+root       28071  0.0  0.0      0     0 ?        I    01:13   0:00 [kworker/1:1]
+root       28087  0.0  0.0      0     0 ?        I    01:17   0:00 [kworker/u12:
+root       28137  0.0  0.0      0     0 ?        I    01:34   0:00 [kworker/u10:
+root       28203  0.0  0.0      0     0 ?        I    01:59   0:00 [kworker/u10:
+root       28289  0.0  0.0      0     0 ?        I    02:28   0:00 [kworker/u12:
+root       28317  0.0  0.0      0     0 ?        I    02:39   0:00 [kworker/u9:0
+root       28335  0.0  0.0      0     0 ?        I    02:45   0:00 [kworker/u11:
+root       28357  0.0  0.0      0     0 ?        I    02:52   0:00 [kworker/u10:
+root       28375  0.0  0.0      0     0 ?        I    02:57   0:00 [kworker/u11:
+root       28376  0.0  0.0      0     0 ?        I    02:57   0:00 [kworker/u11:
+sk         28383  200  0.0   9632  4992 pts/0    R+   02:58   0:00 ps -aux
+
+# To test the connectivity between 2 nodes
+sk@server:~$ ping -c 4 youtube.com
+PING youtube.com (2607:f8b0:4006:80c::200e) 56 data bytes
+64 bytes from lga34s35-in-x0e.1e100.net (2607:f8b0:4006:80c::200e): icmp_seq=1 ttl=118 time=1.01 ms
+64 bytes from lga34s35-in-x0e.1e100.net (2607:f8b0:4006:80c::200e): icmp_seq=2 ttl=118 time=0.986 ms
+64 bytes from lga34s35-in-x0e.1e100.net (2607:f8b0:4006:80c::200e): icmp_seq=3 ttl=118 time=1.08 ms
+64 bytes from lga34s35-in-x0e.1e100.net (2607:f8b0:4006:80c::200e): icmp_seq=4 ttl=118 time=1.12 ms
+
+--- youtube.com ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3118ms
+rtt min/avg/max/mdev = 0.986/1.048/1.119/0.053 ms
