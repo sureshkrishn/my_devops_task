@@ -1,0 +1,8 @@
+sk@server:~$ ss -tuln | grep "LISTEN"
+tcp   LISTEN 0      4096             127.0.0.54:53        0.0.0.0:*
+tcp   LISTEN 0      4096          127.0.0.53%lo:53        0.0.0.0:*
+tcp   LISTEN 0      4096                      *:1006            *:*
+sk@server:~$ netstat -tuln | grep "LISTEN"
+tcp        0      0 127.0.0.54:53           0.0.0.0:*               LISTEN
+tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN
+tcp6       0      0 :::1006                 :::*                    LISTEN
