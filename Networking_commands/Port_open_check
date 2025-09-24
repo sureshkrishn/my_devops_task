@@ -1,3 +1,37 @@
+sk@server:~$ telnet amazon.com 9000
+Trying 52.94.236.248...
+Connection failed: Connection refused
+Trying 205.251.242.103...
+Connection failed: Connection refused
+Trying 54.239.28.85...
+telnet: Unable to connect to remote host: Connection refused
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 sk@server:~$ ss -tuln | grep "LISTEN"
 tcp   LISTEN 0      4096             127.0.0.54:53        0.0.0.0:*
 tcp   LISTEN 0      4096          127.0.0.53%lo:53        0.0.0.0:*
