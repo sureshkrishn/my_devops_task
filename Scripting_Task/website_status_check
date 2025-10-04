@@ -1,0 +1,15 @@
+sk@server:~/scripts$ cat status_code.sh
+#!/bin/bash
+
+url="https://www.youtube.com"
+status_code=$(curl -s -o /dev/null -w "%{http_code}" "$url")
+echo "HTTP status code for $url is: $status_code"
+if [ "$status_code" -ge 200 ] && [ "$status_code" -lt 300 ]; then
+    echo "Success: Website is reachable with status code $status_code."
+else
+    echo "Failure: Website returned status code $status_code."
+fi
+sk@server:~/scripts$ ./status_code.sh
+HTTP status code for https://www.youtube.com is: 200
+Success: Website is reachable with status code 200.
+sk@server:~/scripts$
