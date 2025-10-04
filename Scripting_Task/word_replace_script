@@ -1,0 +1,31 @@
+sk@server:~/scripts$ cat -n samplefile.txt
+     1  Hello world
+     2  This is a test file
+     3  We want to give you something
+     4  Please give careful attention
+     5  Welcome to the learning session
+     6  This line will give you knowledge
+     7  Welcome everyone, give it your best
+     8  This line does not have the word
+     9  Give and take is important
+    10  Welcome to the future of learning
+sk@server:~/scripts$ cat word_replace.sh
+#!/bin/bash
+
+sed '5,$ {/welcome/I s/give/learning/g}' samplefile.txt > modified_samplefile.tx                                                                             t
+
+echo "Modified file content:"
+cat -n  modified_samplefile.txt
+sk@server:~/scripts$ ./word_replace.sh
+Modified file content:
+     1  Hello world
+     2  This is a test file
+     3  We want to give you something
+     4  Please give careful attention
+     5  Welcome to the learning session
+     6  This line will give you knowledge
+     7  Welcome everyone, learning it your best
+     8  This line does not have the word
+     9  Give and take is important
+    10  Welcome to the future of learning
+sk@server:~/scripts$
