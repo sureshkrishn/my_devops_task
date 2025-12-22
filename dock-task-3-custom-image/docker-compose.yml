@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  nginx:
+    image: sureshkrishn/custom-nginx:1.0
+    container_name: custom-nginx-container
+    ports:
+      - "80:80"
+    volumes:
+      - /var/opt/nginx:/usr/share/nginx/html
